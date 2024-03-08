@@ -1,4 +1,5 @@
 import './App.css';
+import * as mathjs from 'mathjs';
 import React, { useState } from 'react';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
 
   function calculateResult() {
     try {
-      const result = eval(displayValue);
+      const result = mathjs(displayValue);
       setResult(result.toString());
     } catch (error) {
       setDisplayValue('Error');
