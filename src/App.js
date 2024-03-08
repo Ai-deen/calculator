@@ -1,5 +1,4 @@
 import './App.css';
-import * as mathjs from 'mathjs';
 import React, { useState } from 'react';
 
 function App() {
